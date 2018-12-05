@@ -1,0 +1,23 @@
+﻿body {
+    margin: 0px;
+    text-align: center;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium';
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.Linkbutton {
+    border: groove red 2px;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px red;
+    color: red;
+    font-size: 36px;
+    text-align: center;
+    position: center;
+    min-width: 290px;
+}
