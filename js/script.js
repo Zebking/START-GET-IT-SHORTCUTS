@@ -16,4 +16,10 @@ function clearResult() {
 function changecolor() {
     var cC = document.getElementById('body1');
     cC.style.backgroundColor = "black";
+
 }
+function changecolorBack() {
+    var cC = document.getElementById('body1');
+    cC.style.backgroundColor = "white";
+}
+
