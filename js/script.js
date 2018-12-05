@@ -78,7 +78,7 @@ function checkCombination(index1, index2, index3) {
         && box3 === box1
     ) {
         var winner = box1 === 'X' ? 'You are' : 'The computer is';
-        document.getElementById('info').innerHTML = winner + '<a href="javascript:restart()"> the winner! Click to retry!</a>';
+        document.getElementById('info').innerHTML = winner + '<a class="linktext" href="javascript:restart()"> the winner!<br> Click to retry!</a>';
         isGameStopped = true;
     }
 }

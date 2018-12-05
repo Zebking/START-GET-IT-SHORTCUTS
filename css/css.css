@@ -42,19 +42,19 @@
     }
 
 
-a:link {
+.linkz:link {
     color: white;
 }
 
-a:visited {
+.linkz:visited {
     color: white;
 }
 
-a:hover {
+.linkz:hover {
     color: darkred;
 }
 
-a:active {
+.linkz:active {
     color: white;
 }
 
@@ -320,9 +320,10 @@ div.grid-item {
 #info {
     text-align: center;
     font-size: 300%;
+    margin-top: 14vh;
 }
 
-a {
+.linktext {
     color: black;
     text-decoration: none;
 }
@@ -336,6 +337,7 @@ a {
     margin-left: 35vw;
     margin-right: 35vw;
     border-radius: 5%;
+    margin-top: 5vh;
 }
 .boxwrap {
     position: absolute;
@@ -343,6 +345,7 @@ a {
     top: 10px;
     left: 33%;
     right: 33%;
+    width: 33%;
     color: darkred;
     font-size: 34px;
     font-family: 'Franklin Gothic Medium';
