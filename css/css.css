@@ -304,3 +304,52 @@ div.calcback2 {
     color: lime;
     text-shadow: 0 0 5px lime;
 }
+div.grid-item {
+    color: red;
+    background-color: Black;
+    width: 9vw;
+    height: 9vw;
+    font-family: helvetica;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 0 10px black;
+    border: groove darkred 5px;
+    font-size: 1000%;
+}
+
+#info {
+    text-align: center;
+    font-size: 300%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 9vw 9vw 9vw;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+    margin-top: 4vh;
+    position: center;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    border-radius: 5%;
+}
+.boxwrap {
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    left: 33%;
+    right: 33%;
+    color: darkred;
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium';
+    z-index: -1;
+    border: groove 5px darkred;
+    box-shadow: 0 0 5px black;
+    border-radius: 15px;
+    padding-bottom: 90vh;
+
+}
