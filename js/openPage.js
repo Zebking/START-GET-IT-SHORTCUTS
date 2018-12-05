@@ -4,9 +4,9 @@ function showopenPage() {
 
 <div class="backtop"></div>
 <img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
-<div onclick="showproPage() changecolorBack()" class="backbutton">&lt;&lt</div>
+<div onclick="showproPage(), changecolorBack()" class="backbutton">&lt;&lt</div>
 
-<h1 class="pole">Er Stokke vinmonopol åpent eller stengt?</h1>
+<h1 class="pole">Is the liquor store in stokke open?</h1>
 <div id="dayAndTime" style="padding-top: 20px;"></div>
 
 
@@ -30,23 +30,23 @@ function showopenPage() {
 
             if (dayNo < 5) {
                 if (hour >= 10 && hour <= 16)
-                    div.innerHTML += '<p class=open>Åpent!<br>PARTY TIME!</p>';
+                    div.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
                 else
-                    div.innerHTML += '<p class=stengt>Stengt!<br>No party party..T_T</p>';
+                    div.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
             }
             else if (dayNo === 5) {
                 if (hour >= 10 && hour <= 17)
-                    div.innerHTML += '<p class=open>Åpent!<br>PARTY TIME!</p>';
+                    div.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
                 else
-                    div.innerHTML += '<p class=stengt>Stengt!<br>No party party..T_T</p>';
+                    div.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
             }
             else if (dayNo === 6) {
                 if (hour >= 10 && hour <= 14)
-                    div.innerHTML += '<p class=open>Åpent!<br>PARTY TIME!</p>';
+                    div.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
                 else
-                    div.innerHTML += '<p class=stengt>Stengt!<br>No party party..T_T</p>';
+                    div.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
             } else if (dayNo === 7) {
-                div.innerHTML += '<p class=stengt>Stengt!<br>No party party..T_T</p>';
+                div.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
 
             }
 
