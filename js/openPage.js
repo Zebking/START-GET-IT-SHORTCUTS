@@ -4,7 +4,7 @@ function showopenPage() {
 
 <div class="backtop"></div>
 <img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
-<div onclick="showproPage(), changecolorBack()" class="backbutton">&lt;&lt</div>
+<div onclick="showproPage() changecolorBack()" class="backbutton">&lt;&lt</div>
 
 <h1 class="pole">Er Stokke vinmonopol åpent eller stengt?</h1>
 <div id="dayAndTime" style="padding-top: 20px;"></div>
