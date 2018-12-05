@@ -2,7 +2,11 @@ function showopenPage() {
     var mainContentDiv = document.getElementById('mainContent');
     mainContentDiv.innerHTML = `
 
-<h1 class="pole">Er vinmonopolet på stokke åpent?</h1>
+<div class="backtop"></div>
+<img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
+<div onclick="showproPage()" class="backbutton">&lt;&lt</div>
+
+<h1 class="pole">Er Stokke vinmonopol åpent eller stengt?</h1>
 <div id="dayAndTime" style="padding-top: 20px;"></div>
 
 
