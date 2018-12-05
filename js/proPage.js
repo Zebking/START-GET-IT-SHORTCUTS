@@ -7,14 +7,17 @@ function showproPage() {
     <img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
     <div onclick="showfrontPage()" class="backbutton">&lt;&lt</div>
 
+    <img class="dragonleft" src="img/dragonleft.png" alt="dragon">
+    <img class="dragonright" src="img/dragonright.png" alt="dragon">
+
     <h1 class="backheadtext">Projects</h1>
 
-    <div class="wrapper"></div>
-    <div class="Linkbutton" id="lb1" onclick="showcalcPage()">Calculator</div>
-    <div class="Linkbutton" onclick="showopenPage(), changecolor()">Is it open?</div>
-    <div class="Linkbutton" onclick="showpizzaPage()">Pizza order</div>
-    <div class="Linkbutton" onclick="showtictacPage()">Tic Tac Toe</div>
-    <div class="Linkbutton"><a style="text-decoration:none;" href="https://github.com/Zebking/zebsbook">This page on github</a></div>
+        <div class="wrapper"></div>
+        <div class="Linkbutton" id="lb1" onclick="showcalcPage()">Calculator</div>
+        <div class="Linkbutton" onclick="showopenPage(), changecolor()">Is it open?</div>
+        <div class="Linkbutton" onclick="showpizzaPage()">Pizza order</div>
+        <div class="Linkbutton" onclick="showtictacPage()">Tic Tac Toe</div>
+        <div class="Linkbutton"><a style="text-decoration:none;" href="https://github.com/Zebking/zebsbook">This page on github</a></div>
     
     `
 }
