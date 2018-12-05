@@ -16,7 +16,7 @@ function showproPage() {
         <div class="Linkbutton" id="lb1" onclick="showcalcPage()">Calculator</div>
         <div class="Linkbutton" onclick="showopenPage(), changecolor()">Is it open?</div>
         <div class="Linkbutton" onclick="showticPage()">TicTacToe</div>
-        <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://github.com/Zebking/zebsbook">This page on github</a></div>
+        <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" target="_blank" href="https://github.com/Zebking/zebsbook">This page on github</a></div>
     
     `
 }
