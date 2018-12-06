@@ -86,13 +86,13 @@ function restart() {
     location.reload();
 }
 function pizzapopup() {
-    var popup = document.getElementByclass("myPopup");
+    var popup = document.getElementByClass("myPopup");
     popup.classList.toggle("show");
 }
 
 function info() {
     var btnBestill = document.getElementById('bestill');
-    var infoDiv = document.getElementById('info');
+    var infoDiv = document.getElementById('info1');
     var aPi = document.getElementById('piA');
     var iPi = document.getElementById('piI');
     var bunnTykk = document.getElementById('tykkBunn');

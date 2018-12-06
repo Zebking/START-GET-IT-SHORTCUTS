@@ -356,7 +356,7 @@ div.grid-item {
     padding-bottom: 90vh;
 
 }
-/* Popup container - can be anything you want */
+
 .popup {
     position: relative;
     display: inline-block;
@@ -365,6 +365,19 @@ div.grid-item {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    border: groove darkred 2px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    position: center;
+    min-width: 290px;
+    cursor: pointer;
+    width: 20vw;
+    margin-top: 5vh;
+    padding: 10px;
 }
 
     /* The actual popup */
@@ -428,7 +441,7 @@ div.grid-item {
     
 }
 .header1 {
-    font-size: 200%;
+    font-size: 400%;
     text-align: center;
     margin-top: 13vh;
     color: white;
@@ -444,4 +457,8 @@ div.grid-item {
     border-radius: 5%;
     margin-top: 5vh;
     color: white;
+}
+#info1 {
+    font: 18px white;
+    font-family: Helvetica;
 }

@@ -12,7 +12,7 @@ function showpizzaPage() {
 
         <h3 class="header1">Pizza-order</h3>
 
-        <div id="info" class="pizzainput" style="padding-bottom: 20px;">Make a choice on each line:</div>
+        <div id="info1" class="pizzainput" style="padding-bottom: 20px;">Make a choice on each line:</div>
       <div class="gridcon">
         Dough: <input class="pizzainput" id="tykkBunn" type="radio" name="bunn" onchange="info()"/>Thick
         <input class="pizzainput" id="tynnBunn" type="radio" name="bunn" onchange="info()"/>Thin <br/>
