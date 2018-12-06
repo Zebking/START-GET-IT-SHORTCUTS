@@ -86,43 +86,45 @@ function restart() {
     location.reload();
 }
 function pizzapopup() {
-    var popup = document.getElementById("myPopup");
+    var popup = document.getElementByclass("myPopup");
     popup.classList.toggle("show");
 }
-var btnBestill = document.getElementById('bestill');
-var infoDiv = document.getElementById('info');
-var aPi = document.getElementById('piA');
-var iPi = document.getElementById('piI');
-var bunnTykk = document.getElementById('tykkBunn');
-var bunnTynn = document.getElementById('tynnBunn');
-var fyllTaco = document.getElementById('fyllTaco');
-var fyllKylling = document.getElementById('fyllKylling');
-var fyllPepperoni = document.getElementById('fyllPepperoni');
-var fyllSkinke = document.getElementById('fyllSkinke');
-var strStor = document.getElementById('stor');
-var strMiddels = document.getElementById('middels');
-var strLiten = document.getElementById('liten');
 
 function info() {
+    var btnBestill = document.getElementById('bestill');
+    var infoDiv = document.getElementById('info');
+    var aPi = document.getElementById('piA');
+    var iPi = document.getElementById('piI');
+    var bunnTykk = document.getElementById('tykkBunn');
+    var bunnTynn = document.getElementById('tynnBunn');
+    var fyllTaco = document.getElementById('fyllTaco');
+    var fyllKylling = document.getElementById('fyllKylling');
+    var fyllPepperoni = document.getElementById('fyllPepperoni');
+    var fyllSkinke = document.getElementById('fyllSkinke');
+    var strStor = document.getElementById('stor');
+    var strMiddels = document.getElementById('middels');
+    var strLiten = document.getElementById('liten');
     if ((bunnTykk.checked || bunnTynn.checked) &&
         (fyllTaco.checked || fyllKylling.checked || fyllPepperoni.checked || fyllSkinke.checked) &&
         (strStor.checked || strMiddels.checked || strLiten.checked) &&
         (aPi.checked || iPi.checked)) {
-        infoDiv.innerHTML = 'Du har fylt ut alt og er klar til å bestille!';
+        infoDiv.innerHTML = 'You have filled out the reqired info <br/> Ready to order!';
         btnBestill.disabled = false;
-    } else {
-        infoDiv.innerHTML = 'Du har ikke valgt:';
+    }
+    else {
+        infoDiv.innerHTML = 'You have not chosen:';
         if (!aPi.checked && !iPi.checked) {
             infoDiv.innerHTML += '<li>Pizzatype</li>';
         }
         if (!bunnTykk.checked && !bunnTynn.checked) {
-            infoDiv.innerHTML += '<li>Bunn</li>';
+            infoDiv.innerHTML += '<li>Dough</li>';
         }
         if (!fyllTaco.checked && !fyllKylling.checked && !fyllPepperoni.checked && !fyllSkinke.checked) {
-            infoDiv.innerHTML += '<li>Fyll</li>';
+            infoDiv.innerHTML += '<li>Topping</li>';
         }
         if (!strStor.checked && !strMiddels.checked && !strLiten.checked) {
-            infoDiv.innerHTML += '<li>Størrelse</li>';
+            infoDiv.innerHTML += '<li>Size</li>';
         }
     }
 }
+

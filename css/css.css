@@ -385,14 +385,14 @@ div.grid-item {
 
         /* Popup arrow */
         .popup .popuptext::after {
-            content: "";
+            content: "You have made your order!";
             position: absolute;
             top: 100%;
             left: 50%;
             margin-left: -5px;
             border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
+            border-style: groove;
+            border-color: white transparent transparent transparent;
         }
 
     /* Toggle this class - hide and show the popup */
@@ -430,12 +430,12 @@ div.grid-item {
 .header1 {
     font-size: 200%;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 13vh;
     color: white;
+    position: center;
+    z-index: 3;
 }
 .gridcon {
-    display: grid;
-    grid-template-columns: 9vw 9vw 9vw; 
     text-align: center;
     margin-top: 4vh;
     position: center;
