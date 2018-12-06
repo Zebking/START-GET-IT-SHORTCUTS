@@ -378,6 +378,7 @@ div.grid-item {
     width: 20vw;
     margin-top: 5vh;
     padding: 10px;
+    z-index: 5;
 }
 
     /* The actual popup */
@@ -390,7 +391,7 @@ div.grid-item {
         border-radius: 6px;
         padding: 8px 0;
         position: absolute;
-        z-index: 1;
+        z-index: 5;
         bottom: 125%;
         left: 50%;
         margin-left: -80px;
@@ -398,14 +399,14 @@ div.grid-item {
 
         /* Popup arrow */
         .popup .popuptext::after {
-            content: "You have made your order!";
+            content: "";
             position: absolute;
             top: 100%;
             left: 50%;
             margin-left: -5px;
             border-width: 5px;
             border-style: groove;
-            border-color: white transparent transparent transparent;
+            border-color: white;
         }
 
     /* Toggle this class - hide and show the popup */
@@ -415,7 +416,6 @@ div.grid-item {
         animation: fadeIn 1s;
     }
 
-/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;

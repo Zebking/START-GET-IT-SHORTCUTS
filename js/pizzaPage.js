@@ -29,7 +29,8 @@ function showpizzaPage() {
         <input class="pizzainput" id="middels" type="radio" name="str" onchange="info()"/>Medium
         <input class="pizzainput" id="liten" type="radio" name="str" onchange="info()"/>Small<br/>
 
-        <button id="bestill" class="popup" disabled="true" onclick="pizzapopup()";>Order!</button>
+        <button id="bestill" class="popup" disabled="true" onclick="pizzapopup()";>Order!
+                <span class="popuptext" id="myPopup">You have made your order!</span></button>
       </div>
     `
 }
