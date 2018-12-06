@@ -2,7 +2,7 @@
     margin: 0px;
     text-align: center;
     background-color: white;
-    font-family: 'Franklin Gothic Medium';
+    font-family: Helvetica;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -421,4 +421,27 @@ div.grid-item {
     to {
         opacity: 1;
     }
+}
+.pizzainput {
+    color: white;
+    margin-top: 2vh;
+    
+}
+.header1 {
+    font-size: 200%;
+    text-align: center;
+    margin-top: 10vh;
+    color: white;
+}
+.gridcon {
+    display: grid;
+    grid-template-columns: 9vw 9vw 9vw; 
+    text-align: center;
+    margin-top: 4vh;
+    position: center;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    border-radius: 5%;
+    margin-top: 5vh;
+    color: white;
 }
