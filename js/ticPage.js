@@ -1,6 +1,5 @@
 function showticPage() {
     var mainContentDiv = document.getElementById('mainContent');
-    var isGameStopped = false;
     mainContentDiv.innerHTML = ` 
 
     <div class="backtop"></div>
