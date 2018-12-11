@@ -26,10 +26,11 @@
     position: center;
     min-width: 290px;
     cursor: pointer;
-    width: 20vw;
+    min-width: 10vw;
+    max-width: 40vw;
+    margin-right: 35vw;
+    margin-left: 35vw;
     margin-top: 2vh;
-    margin-left: 40vw;
-    margin-right: 40vw;
     padding: 10px;
 }
 
@@ -129,14 +130,16 @@ img.dragonimg2 {
 
 img.dragonleft {
     position: absolute;
-    top: 15vh;
-    left: 1px;
+    top: 17vh;
+    left: 5px;
+    max-width: 20vw;
 }
 
 img.dragonright {
     position: absolute;
-    top: 15vh;
-    right: 1px;
+    top: 17vh;
+    right: 5px;
+    max-width: 20vw;
 }
 
 .box1 {
@@ -153,6 +156,7 @@ img.dragonright {
     padding-bottom: 80vh;
     box-shadow: 0 0 10px black;
     border-radius: 15px;
+    max-height: 90vh;
 }
 
 .wrapper {
@@ -461,4 +465,7 @@ div.grid-item {
 #info1 {
     font: 18px white;
     font-family: Helvetica;
+}
+img.dragonleft {
+
 }
