@@ -13,7 +13,7 @@ function showfrontPage() {
 
         <div class="wrapper">-</div>
         <div class="Linkbutton" id="lb1"><a class="linkz" style="text-decoration: none;" href="https://getacademy.moodlecloud.com/my/" target="_blank">Moodlecloud</a></div>
-        <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://photos.google.com/" target="_blank">Google Photo</a></div>
+        <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://photos.app.goo.gl/dJbz8VybfDxrzYzEA" target="_blank">Project Videos</a></div>
         <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://www.w3schools.com/" target="_blank">w3schools</a></div>
         <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://github.com/" target="_blank">Github</a></div>
         <div class="Linkbutton"><a class="linkz" style="text-decoration: none;" href="https://classroom.google.com/u/1/h" target="_blank">Classroom</a></div>
