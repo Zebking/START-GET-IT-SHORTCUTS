@@ -137,8 +137,8 @@ var farmerCount = 0;
 var tractorCount = 0;
 
 function onLoad() {
-    img1 = document.getElementById("chicken1");
-    img2 = document.getElementById("chicken2");
+    img1 = document.getElementById("Chicken1");
+    img2 = document.getElementById("Chicken2");
     drawImg();
     setInterval(addPointsFromAuto, 1000);
 }
