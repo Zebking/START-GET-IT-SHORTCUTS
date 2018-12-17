@@ -128,14 +128,15 @@ function info() {
     }
 }
 
+var img1;
+var img2;
+var selectedImage = 1;
+var points = 0;
+var pointsPerClick = 1;
+var farmerCount = 0;
+var tractorCount = 0;
+
 function onLoad() {
-    var img1;
-    var img2;
-    var selectedImage = 1;
-    var points = 0;
-    var pointsPerClick = 1;
-    var farmerCount = 0;
-    var tractorCount = 0;
     img1 = document.getElementById("chicken1");
     img2 = document.getElementById("chicken2");
     drawImg();
@@ -148,18 +149,14 @@ function drawImg() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     var image = selectedImage === 1 ? img1 : img2;
     ctx.drawImage(image, 10, 10);
-};
+}
 
 function changeImg() {
     if (selectedImage === 1) selectedImage = 2;
     else selectedImage = 1;
-    setTimeout(function () {
-            selectedImage = 1;
-            drawImg();
-        },
-        200);
+    setTimeout(function () { selectedImage = 1; drawImg(); }, 200);
     drawImg();
-};
+}
 
 function addPoint() {
     points += pointsPerClick;
