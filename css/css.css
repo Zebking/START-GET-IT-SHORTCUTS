@@ -496,6 +496,21 @@ div.grid-item {
     top: 190px;
     left: 1%;
 }
+#combine1 {
+    position: absolute;
+    top: 220px;
+    left: 1%;
+}
+#coop1 {
+    position: absolute;
+    top: 250px;
+    left: 1%;
+}
+#barn1 {
+    position: absolute;
+    top: 280px;
+    left: 1%;
+}
 #myCanvas {
     margin-top: 5%;
     z-index: 2;

@@ -135,6 +135,9 @@ var points = 0;
 var pointsPerClick = 1;
 var farmerCount = 0;
 var tractorCount = 0;
+var combineCount = 0;
+var chickenCoopCount = 0;
+var barnCount = 0;
 
 function onLoad() {
     img1 = document.getElementById("chicken1");
@@ -190,9 +193,33 @@ function buyTractor() {
         showPoints();
     }
 }
+function buyCombine() {
+    if (points > 1000) {
+        points -= 1000;
+        combineCount += 20;
+        showPoints();
+    }
+}
+function buyChickenCoop() {
+    if (points > 10000) {
+        points -= 10000;
+        chickenCoopCount += 100;
+        showPoints();
+    }
+}
+function buyBarn() {
+    if (points > 100000) {
+        points -= 100000;
+        chickenCoopCount += 1000;
+        showPoints();
+    }
+}
 
 function addPointsFromAuto() {
     points += farmerCount;
     points += tractorCount;
+    points += combineCount;
+    points += chickenCoopCount;
+    points += barnCount;
     showPoints();
 }
