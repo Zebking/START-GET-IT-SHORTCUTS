@@ -497,8 +497,9 @@ div.grid-item {
     left: 1%;
 }
 #myCanvas {
-    margin-top: 3%;
+    margin-top: 5%;
     z-index: 2;
+    margin-left: 8%;
 }
 @-webkit-keyframes shakeelement {
     0%   { -webkit-transform: translate(2px, 1px) rotate(0deg); }
