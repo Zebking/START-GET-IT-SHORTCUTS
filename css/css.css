@@ -482,18 +482,18 @@ div.grid-item {
 
 #upgrade1 {
     position: absolute;
-    top: 96px;
+    top: 130px;
     left: 1%;
 }
 
 #farmer1 {
     position: absolute;
-    top: 126px;
+    top: 160px;
     left: 1%;
 }
 #tractor1 {
     position: absolute;
-    top: 156px;
+    top: 190px;
     left: 1%;
 }
 #myCanvas {

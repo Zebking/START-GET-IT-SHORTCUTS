@@ -21,75 +21,80 @@ function chickenClicker() {
         <button id="tractor1" onclick="buyTractor()">Buy Tractor - 500p</button>
         <button id="testButton" onclick="transform()">test</button>
 
-        `
-}
+     
+`
+    var img1;
+    var img2;
+    var selectedImage = 1;
+    var points = 0;
+    var pointsPerClick = 1;
+    var farmerCount = 0;
+    var tractorCount = 0;
 
-var img1;
-var img2;
-var selectedImage = 1;
-var points = 0;
-var pointsPerClick = 1;
-var farmerCount = 0;
-var tractorCount = 0;
 
-window.onload = function () {
-    img1 = document.getElementById("chicken1");
-    img2 = document.getElementById("chicken2");
-    drawImg();
-    setInterval(addPointsFromAuto, 1000);
-}
+    window.onload = function() {
+        img1 = document.getElementById("chicken1");
+        img2 = document.getElementById("chicken2");
+        drawImg();
+        setInterval(addPointsFromAuto, 1000);
+    }
 
-function drawImg() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var image = selectedImage === 1 ? img1 : img2;
-    ctx.drawImage(image, 10, 10);
-};
+    function drawImg() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        var image = selectedImage === 1 ? img1 : img2;
+        ctx.drawImage(image, 10, 10);
+    };
 
-function changeImg() {
-    if (selectedImage === 1) selectedImage = 2;
-    else selectedImage = 1;
-    setTimeout(function () { selectedImage = 1; drawImg(); }, 200);
-    drawImg();
-};
+    function changeImg() {
+        if (selectedImage === 1) selectedImage = 2;
+        else selectedImage = 1;
+        setTimeout(function() {
+                selectedImage = 1;
+                drawImg();
+            },
+            200);
+        drawImg();
+    };
 
-function addPoint() {
-    points += pointsPerClick;
-    showPoints();
-}
-
-function showPoints() {
-    document.getElementById('points').value = points;
-}
-
-function upgrade() {
-    if (points >= 10) {
-        points -= 10;
-        pointsPerClick++;
+    function addPoint() {
+        points += pointsPerClick;
         showPoints();
     }
-}
 
-function buyFarmer() {
-    if (points > 100) {
-        points -= 100;
-        farmerCount++;
+    function showPoints() {
+        document.getElementById('points').value = points;
+    }
+
+    function upgrade() {
+        if (points >= 10) {
+            points -= 10;
+            pointsPerClick++;
+            showPoints();
+        }
+    }
+
+    function buyFarmer() {
+        if (points > 100) {
+            points -= 100;
+            farmerCount++;
+            showPoints();
+        }
+    }
+
+    function buyTractor() {
+        if (points > 500) {
+            points -= 500;
+            tractorCount += 10;
+            showPoints();
+        }
+    }
+
+    function addPointsFromAuto() {
+        points += farmerCount;
+        points += tractorCount;
         showPoints();
     }
-}
 
-function buyTractor() {
-    if (points > 500) {
-        points -= 500;
-        tractorCount += 10;
-        showPoints();
-    }
 }
-
-function addPointsFromAuto() {
-    points += farmerCount;
-    points += tractorCount;
-    showPoints();
-}
-
