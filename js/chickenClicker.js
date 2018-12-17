@@ -22,7 +22,7 @@ function chickenClicker() {
         <button id="testButton" onclick="transform()">test</button>
 
      
-
+    `
     var img1;
     var img2;
     var selectedImage = 1;
@@ -97,5 +97,5 @@ function chickenClicker() {
         showPoints();
     }
 
-`
+
 }
