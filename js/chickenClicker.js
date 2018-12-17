@@ -19,7 +19,6 @@ function chickenClicker() {
         <button id="upgrade1" onclick="upgrade()">Upgrade click - 10p</button>
         <button id="farmer1" onclick="buyFarmer()">Buy Farmer - 100p</button>
         <button id="tractor1" onclick="buyTractor()">Buy Tractor - 500p</button>
-        <button id="testButton" onclick="transform()">test</button>
 
      
     `
