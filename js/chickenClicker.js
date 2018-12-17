@@ -3,7 +3,6 @@ function chickenClicker() {
     mainContentDiv.innerHTML = ` 
 
 <div class="backtop"></div>
-<div class="box1">-</div>
 <img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
 <div onclick="showproPage()" class="backbutton">&lt;&lt</div>
 
