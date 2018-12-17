@@ -8,8 +8,8 @@ function chickenClicker() {
 
 <h1 class="backheadtext">Chicken Clicker</h1>
 
-        <img id="chicken1" width="640" hight="720" src="img/Chicken1.png" alt="chicken1" />
-        <img id="chicken2" width="640" hight="720" src="img/Chicken2.png" alt="chicken2" />
+        <img id="chicken1" width="640" hight="720" src="img/chicken1.png" alt="chicken1" />
+        <img id="chicken2" width="640" hight="720" src="img/chicken2.png" alt="chicken2" />
 
 
         <canvas id="myCanvas" width="660" height="740"
