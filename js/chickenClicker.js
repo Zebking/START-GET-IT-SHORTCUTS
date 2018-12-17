@@ -7,13 +7,14 @@ function chickenClicker() {
 <img class="dragonimg" src="img/dragonimg.jpg" alt="dragon">
 <div onclick="showproPage()" class="backbutton">&lt;&lt</div>
 
-    <h1 class="head1">Chicken clicker</h1>
+<h1 class="backheadtext">Chicken Clicker</h1>
+
         <img id="chicken1" width="640" hight="720" src="https://i.imgur.com/3MsG9if.png" alt="chicken1" />
         <img id="chicken2" width="640" hight="720" src="https://i.imgur.com/LfORjdy.png" alt="chicken2" />
 
 
         <canvas id="myCanvas" width="660" height="740"
-    onclick="changeImg(), addPoint()" value="add Point"></canvas>
+        onclick="changeImg(), addPoint()" value="add Point"></canvas>
 
         <input type="text" id="points" value="0" />
         <button id="upgrade1" onclick="upgrade()">Upgrade click - 10p</button>
