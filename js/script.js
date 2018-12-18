@@ -210,7 +210,7 @@ function buyChickenCoop() {
 function buyBarn() {
     if (points > 100000) {
         points -= 100000;
-        chickenCoopCount += 1000;
+        barnCount += 1000;
         showPoints();
     }
 }
