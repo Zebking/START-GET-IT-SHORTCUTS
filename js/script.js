@@ -138,6 +138,7 @@ var tractorCount = 0;
 var combineCount = 0;
 var chickenCoopCount = 0;
 var barnCount = 0;
+var steroidCount = 0;
 
 function onLoad() {
     img1 = document.getElementById("chicken1");
@@ -214,12 +215,26 @@ function buyBarn() {
         showPoints();
     }
 }
-
+function buySteroids() {
+    if (points > 1000000) {
+        points -= 1000000;
+        steroidCount += 10000;
+        showPoints();
+    }
+}
+function buyEvolve() {
+    if (points > 10000000) {
+        points -= 10000000;
+        evolveCount += 10000;
+        showPoints();
+    }
+}
 function addPointsFromAuto() {
     points += farmerCount;
     points += tractorCount;
     points += combineCount;
     points += chickenCoopCount;
     points += barnCount;
+    points += steroidCount;
     showPoints();
 }
