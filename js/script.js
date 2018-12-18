@@ -143,7 +143,7 @@ var evolveCount = 0;
 
 function onLoad() {
     img1 = document.getElementById("egg1");
-    img2 = document.getElementById("egg2");
+    img2 = document.getElementById("egg1");
     drawImg();
     setInterval(addPointsFromAuto, 1000);
 }
@@ -226,9 +226,13 @@ function buySteroids() {
 function buyEvolve() {
     if (points > 10000000) {
         points -= 10000000;
-        evolveCount += 10000;
+        evolveCount += 100000;
         showPoints();
     }
+}
+function test() {
+    points += 10000000;
+    showPoints();
 }
 function addPointsFromAuto() {
     points += farmerCount;
@@ -238,4 +242,9 @@ function addPointsFromAuto() {
     points += barnCount;
     points += steroidCount;
     showPoints();
+}
+if (points > 100000) {
+    img1 = document.getElementById("egg2");
+    img2 = document.getElementById("egg2");
+    drawImg();
 }
