@@ -24,8 +24,8 @@ function chickenClicker() {
         <button id="combine1" onclick="buyCombine()">Buy Combine - 1000p</button>
         <button id="coop1" onclick="buyChickenCoop()">Buy ChickenCoop - 10000p</button>
         <button id="barn1" onclick="buyBarn()">Buy Barn - 100000p</button>
-        <button id="barn1" onclick="buySteroids()">Give chicken steroids - 1000000p</button>
-        <button id="barn1" onclick="buyEvolve()">Evolve - 9999999p</button>
+        <button id="steroids1" onclick="buySteroids()">Give chicken steroids - 1000000p</button>
+        <button id="evolve1" onclick="buyEvolve()">Evolve - 9999999p</button>
 
      
     `

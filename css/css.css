@@ -511,6 +511,16 @@ div.grid-item {
     top: 280px;
     left: 1%;
 }
+#steroids1 {
+    position: absolute;
+    top: 310px;
+    left: 1%;
+}
+#evolve1 {
+    position: absolute;
+    top: 340px;
+    left: 1%;
+}
 #myCanvas {
     margin-top: 5%;
     z-index: 2;
