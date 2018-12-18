@@ -189,14 +189,14 @@ function buyFarmer() {
 function buyTractor() {
     if (points > 500) {
         points -= 500;
-        tractorCount += 10;
+        tractorCount += 5;
         showPoints();
     }
 }
 function buyCombine() {
     if (points > 1000) {
         points -= 1000;
-        combineCount += 20;
+        combineCount += 10;
         showPoints();
     }
 }
