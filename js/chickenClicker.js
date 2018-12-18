@@ -19,9 +19,9 @@ function chickenClicker() {
         <button id="upgrade1" onclick="upgrade()">Upgrade click - 10p</button>
         <button id="farmer1" onclick="buyFarmer()">Buy Farmer - 100p</button>
         <button id="tractor1" onclick="buyTractor()">Buy Tractor - 500p</button>
-        <button id="combine1" onclick="buyTractor()">Buy Combine - 1000p</button>
-        <button id="coop1" onclick="buyTractor()">Buy ChickenCoop - 10000p</button>
-        <button id="barn1" onclick="buyTractor()">Buy Barn - 100000p</button>
+        <button id="combine1" onclick="buyCombine()">Buy Combine - 1000p</button>
+        <button id="coop1" onclick="buyChickenCoop()">Buy ChickenCoop - 10000p</button>
+        <button id="barn1" onclick="buyBarn()">Buy Barn - 100000p</button>
 
      
     `
