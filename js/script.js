@@ -142,8 +142,8 @@ var steroidCount = 0;
 var evolveCount = 0;
 
 function onLoad() {
-    img1 = document.getElementById("Egg1");
-    img2 = document.getElementById("Egg2");
+    img1 = document.getElementById("egg1");
+    img2 = document.getElementById("egg2");
     drawImg();
     setInterval(addPointsFromAuto, 1000);
 }
