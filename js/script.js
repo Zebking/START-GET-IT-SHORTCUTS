@@ -139,10 +139,11 @@ var combineCount = 0;
 var chickenCoopCount = 0;
 var barnCount = 0;
 var steroidCount = 0;
+var evolveCount = 0;
 
 function onLoad() {
-    img1 = document.getElementById("chicken1");
-    img2 = document.getElementById("chicken2");
+    img1 = document.getElementById("Egg1");
+    img2 = document.getElementById("Egg2");
     drawImg();
     setInterval(addPointsFromAuto, 1000);
 }
