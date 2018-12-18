@@ -140,6 +140,7 @@ var chickenCoopCount = 0;
 var barnCount = 0;
 var steroidCount = 0;
 var evolveCount = 0;
+var chickenEvolution = 0;
 
 function onLoad() {
     img1 = document.getElementById("egg1");
@@ -176,6 +177,14 @@ function upgrade() {
     if (points >= 10) {
         points -= 10;
         pointsPerClick++;
+        showPoints();
+    }
+}
+
+function megaUpgrade() {
+    if (points >= 1000) {
+        points -= 1000;
+        pointsPerClick += 100;
         showPoints();
     }
 }
@@ -241,10 +250,10 @@ function addPointsFromAuto() {
     points += chickenCoopCount;
     points += barnCount;
     points += steroidCount;
+    points += evolveCount;
     showPoints();
 }
-if (points > 100000) {
-    img1 = document.getElementById("egg2");
-    img2 = document.getElementById("egg2");
-    drawImg();
+function chickenEvolution() {
+
+
 }

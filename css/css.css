@@ -486,44 +486,50 @@ div.grid-item {
     left: 1%;
 }
 
-#farmer1 {
+#upgrade2 {
     position: absolute;
     top: 160px;
     left: 1%;
 }
-#tractor1 {
+
+#farmer1 {
     position: absolute;
     top: 190px;
     left: 1%;
 }
-#combine1 {
+#tractor1 {
     position: absolute;
     top: 220px;
     left: 1%;
 }
-#coop1 {
+#combine1 {
     position: absolute;
     top: 250px;
     left: 1%;
 }
-#barn1 {
+#coop1 {
     position: absolute;
     top: 280px;
     left: 1%;
 }
-#steroids1 {
+#barn1 {
     position: absolute;
     top: 310px;
     left: 1%;
 }
-#evolve1 {
+#steroids1 {
     position: absolute;
     top: 340px;
     left: 1%;
 }
-#test {
+#evolve1 {
     position: absolute;
     top: 370px;
+    left: 1%;
+}
+#test {
+    position: absolute;
+    top: 400px;
     left: 1%;
 }
 #myCanvas {
