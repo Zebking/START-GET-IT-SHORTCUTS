@@ -8,10 +8,10 @@ function chickenClicker() {
 
 <h1 class="backheadtext">Chicken Clicker</h1>
 
-        <img id="Chicken1" width="640" hight="720" src="img/Chicken1.png" alt="Chicken1" />
-        <img id="Chicken2" width="640" hight="720" src="img/Chicken2.png" alt="Chicken2" />
-        <img id="Egg1" width="640" hight="720" src="img/Egg1.png" alt="Egg1" />
-        <img id="Egg2" width="640" hight="720" src="img/Egg2.png" alt="Egg2" />
+        <img id="chicken1" width="640" hight="720" src="img/Chicken1.png" alt="chicken1" />
+        <img id="chicken2" width="640" hight="720" src="img/Chicken2.png" alt="chicken2" />
+        <img id="egg1" width="640" hight="720" src="img/Egg1.png" alt="egg1" />
+        <img id="egg2" width="640" hight="720" src="img/Egg2.png" alt="egg2" />
 
 
         <canvas id="myCanvas" width="660" height="740"

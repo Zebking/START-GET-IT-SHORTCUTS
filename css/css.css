@@ -469,7 +469,7 @@ div.grid-item {
 .head1 {
     float: left;
 }
-#Chicken1, #Chicken2 #Egg1 #Egg2 {
+#chicken1, #chicken2, #egg1, #egg2 {
     display: none;
     z-index: 2;
 }
