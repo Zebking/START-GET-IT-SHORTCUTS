@@ -17,7 +17,7 @@ function chickenClicker() {
         <canvas id="myCanvas" width="660" height="740"
         onclick="changeImg(), addPoint(), evolveImg()" value="add Point"></canvas>
 
-        <input type="text" id="points" value="0" />
+        <input type="text" id="points" value="0" disabled="disabled"/>
         <button id="upgrade1" onclick="upgrade()">Upgrade click - 10p</button>
         <button id="upgrade2" onclick="megaUpgrade()">Upgrade click super - 1000p</button>
         <button id="farmer1" onclick="buyFarmer()">Buy Farmer - 100p</button>

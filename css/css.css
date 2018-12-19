@@ -471,7 +471,7 @@ div.grid-item {
 }
 #chicken1, #chicken2, #egg1, #egg2 {
     display: none;
-    z-index: 2;
+
 }
 
 #points {
