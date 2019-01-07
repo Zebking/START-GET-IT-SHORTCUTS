@@ -135,13 +135,13 @@ function info() {
     }
 }
 
-//ChickenClicker
+// ChickenClicker
 
 var img1;
 var img2;
 var img3;
 var img4;
-var selectedImage = 3;
+var selectedImage = 0;
 var points = 0;
 var pointsPerClick = 1;
 var farmerCount = 0;
@@ -152,6 +152,7 @@ var barnCount = 0;
 var steroidCount = 0;
 var evolveCount = 0;
 var chickenEvolution = 0;
+console.log();
 
 var imageArray = [
     'img/Egg1.png',
@@ -160,18 +161,13 @@ var imageArray = [
     'img/Chicken2.png',
 ];
 
-window.onload()
-setInterval(addPointsFromAuto, 1000);
-drawImg();
 
 function drawImg() {
     document.getElementById('myImage').src = imageArray[selectedImage];
 }
 
-function changeImg() {
+function changeImg1() {
     if (selectedImage === 0) selectedImage = 1;
-    else selectedImage = 0;
-    setTimeout(function () { selectedImage = 0; drawImg(); }, 200);
     drawImg();
 }
 
@@ -181,10 +177,10 @@ function addPoint() {
 }
 
 function showPoints() {
-    document.getElementById('points').value = points;
+    document.getElementById('points').value = points + "egg's";
 }
 
-function upgrade() {
+function buyClickUp1() {
     if (points >= 10) {
         points -= 10;
         pointsPerClick++;
@@ -192,7 +188,16 @@ function upgrade() {
     }
 }
 
-function megaUpgrade() {
+function buyClickUp2() {
+    if (points >= 100) {
+        points -= 100;
+        pointsPerClick += 10;
+        showPoints();
+    }
+}
+
+
+function buyClickUp3() {
     if (points >= 1000) {
         points -= 1000;
         pointsPerClick += 100;
@@ -200,7 +205,7 @@ function megaUpgrade() {
     }
 }
 
-function buyFarmer() {
+function buyUpgrade1() {
     if (points >= 100) {
         points -= 100;
         farmerCount++;
@@ -208,35 +213,35 @@ function buyFarmer() {
     }
 }
 
-function buyTractor() {
+function buyUpgrade2() {
     if (points >= 500) {
         points -= 500;
         tractorCount += 5;
         showPoints();
     }
 }
-function buyCombine() {
+function buyUpgrade3() {
     if (points >= 1000) {
         points -= 1000;
         combineCount += 10;
         showPoints();
     }
 }
-function buyChickenCoop() {
+function buyUpgrade4() {
     if (points >= 10000) {
         points -= 10000;
         chickenCoopCount += 100;
         showPoints();
     }
 }
-function buyBarn() {
+function buyUpgrade5() {
     if (points >= 100000) {
         points -= 100000;
         barnCount += 1000;
         showPoints();
     }
 }
-function buySteroids() {
+function buyUpgrade6() {
     if (points >= 1000000) {
         points -= 1000000;
         steroidCount += 10000;
@@ -266,10 +271,9 @@ function addPointsFromAuto() {
 }
 
 function startGame() {
+    document.getElementById("myImage").style.visibility = "visible";
     drawImg();
-
-    var startgame = document.getElementById('startGame');
-    startgame.style.display = 'none';
-
+    setInterval(addPointsFromAuto, 1000);
 
 }
+   
