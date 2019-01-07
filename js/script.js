@@ -1,3 +1,5 @@
+//calculator
+
 function buttonClicked(X) {
     var resultBox = document.getElementById('resultBox');
     resultBox.innerHTML += X;
@@ -22,6 +24,8 @@ function changecolorBack() {
     var cC = document.getElementById('body1');
     cC.style.backgroundColor = "white";
 }
+
+// Tic Tac Toa
 
 var isGameStopped = false;
 
@@ -85,6 +89,9 @@ function checkCombination(index1, index2, index3) {
 function restart() {
     location.reload();
 }
+
+// Pizza Order
+
 function pizzapopup() {
     var popup = document.getElementByClass("myPopup");
     popup.classList.toggle("show");
@@ -128,9 +135,13 @@ function info() {
     }
 }
 
+//ChickenClicker
+
 var img1;
 var img2;
-var selectedImage = 1;
+var img3;
+var img4;
+var selectedImage = 3;
 var points = 0;
 var pointsPerClick = 1;
 var farmerCount = 0;
@@ -142,25 +153,25 @@ var steroidCount = 0;
 var evolveCount = 0;
 var chickenEvolution = 0;
 
-function onLoad() {
-    img1 = document.getElementById("egg1");
-    img2 = document.getElementById("egg1");
-    drawImg();
-    setInterval(addPointsFromAuto, 1000);
-}
+var imageArray = [
+    'img/Egg1.png',
+    'img/Egg2.png',
+    'img/Chicken1.png',
+    'img/Chicken2.png',
+];
+
+window.onload()
+setInterval(addPointsFromAuto, 1000);
+drawImg();
 
 function drawImg() {
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    var image = selectedImage === 1 ? img1 : img2;
-    ctx.drawImage(image, 10, 10);
+    document.getElementById('myImage').src = imageArray[selectedImage];
 }
 
 function changeImg() {
-    if (selectedImage === 1) selectedImage = 2;
-    else selectedImage = 1;
-    setTimeout(function () { selectedImage = 1; drawImg(); }, 200);
+    if (selectedImage === 0) selectedImage = 1;
+    else selectedImage = 0;
+    setTimeout(function () { selectedImage = 0; drawImg(); }, 200);
     drawImg();
 }
 
@@ -190,7 +201,7 @@ function megaUpgrade() {
 }
 
 function buyFarmer() {
-    if (points > 100) {
+    if (points >= 100) {
         points -= 100;
         farmerCount++;
         showPoints();
@@ -198,42 +209,42 @@ function buyFarmer() {
 }
 
 function buyTractor() {
-    if (points > 500) {
+    if (points >= 500) {
         points -= 500;
         tractorCount += 5;
         showPoints();
     }
 }
 function buyCombine() {
-    if (points > 1000) {
+    if (points >= 1000) {
         points -= 1000;
         combineCount += 10;
         showPoints();
     }
 }
 function buyChickenCoop() {
-    if (points > 10000) {
+    if (points >= 10000) {
         points -= 10000;
         chickenCoopCount += 100;
         showPoints();
     }
 }
 function buyBarn() {
-    if (points > 100000) {
+    if (points >= 100000) {
         points -= 100000;
         barnCount += 1000;
         showPoints();
     }
 }
 function buySteroids() {
-    if (points > 1000000) {
+    if (points >= 1000000) {
         points -= 1000000;
         steroidCount += 10000;
         showPoints();
     }
 }
 function buyEvolve() {
-    if (points > 10000000) {
+    if (points >= 10000000) {
         points -= 10000000;
         evolveCount += 100000;
         showPoints();
@@ -253,7 +264,12 @@ function addPointsFromAuto() {
     points += evolveCount;
     showPoints();
 }
-function chickenEvolution() {
+
+function startGame() {
+    drawImg();
+
+    var startgame = document.getElementById('startGame');
+    startgame.style.display = 'none';
 
 
 }
