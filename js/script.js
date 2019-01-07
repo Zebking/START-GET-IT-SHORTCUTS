@@ -161,15 +161,16 @@ var imageArray = [
     'img/Chicken2.png',
 ];
 
-
 function drawImg() {
     document.getElementById('myImage').src = imageArray[selectedImage];
 }
 
-function changeImg1() {
-    if (selectedImage === 0) selectedImage = 1;
+function blink() {
+    if (selectedImage === 2) selectedImage = 3;
+    else selectedImage = 2;
+    setTimeout(function () { selectedImage = 2; drawImg(); }, 200);
     drawImg();
-}
+};
 
 function addPoint() {
     points += pointsPerClick;
@@ -253,6 +254,9 @@ function buyEvolve() {
         points -= 10000000;
         evolveCount += 100000;
         showPoints();
+        if (selectedImage === 2) selectedImage += 2;
+        else selectedImage++;
+        drawImg();
     }
 }
 function test() {

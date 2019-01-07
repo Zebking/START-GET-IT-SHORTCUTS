@@ -9,7 +9,7 @@ function chickenClicker() {
 <h1 class="backheadtext">Chicken Clicker</h1>
 
         <img id="myImage" width="300" height="385"
-        onclick="addPoint()" value="add Point"></img>
+        onclick="addPoint(), blink()" value="add Point"></img>
 
         <input type="text" id="points" value="0" disabled="disabled"/>
         <button id="clickUp1" onclick="buyClickUp1()">Upgrade click</button>
@@ -38,7 +38,7 @@ function chickenClicker() {
             <li>Upgrade 5 - Give 1000eps - 100.000 Egg's</li>
             <li>Upgrade 6 - Give 10000eps - 1.000.000 Egg's</li>
             <li>Evolve - 10.000.000 Egg's</li>
-            <li></li>
+            <li>--------------------------------------</li>
             <li>eps = Egg's per seconds</li>
             <li>epc = Egg's per click</li>
         </ul>
