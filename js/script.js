@@ -166,6 +166,7 @@ function drawImg() {
 }
 
 function blink() {
+    if (selectedImage <= 1) return;
     if (selectedImage === 2) selectedImage = 3;
     else selectedImage = 2;
     setTimeout(function () { selectedImage = 2; drawImg(); }, 200);
