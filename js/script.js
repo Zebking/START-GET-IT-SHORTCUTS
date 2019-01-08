@@ -137,10 +137,7 @@ function info() {
 
 // ChickenClicker
 
-var img1;
-var img2;
-var img3;
-var img4;
+
 var selectedImage = 0;
 var points = 0;
 var pointsPerClick = 1;
@@ -152,7 +149,7 @@ var barnCount = 0;
 var steroidCount = 0;
 var evolveCount = 0;
 var chickenEvolution = 0;
-console.log();
+
 
 var imageArray = [
     'img/Egg1.png',     //0
