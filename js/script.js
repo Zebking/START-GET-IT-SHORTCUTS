@@ -155,21 +155,52 @@ var chickenEvolution = 0;
 console.log();
 
 var imageArray = [
-    'img/Egg1.png',
-    'img/Egg2.png',
-    'img/Chicken1.png',
-    'img/Chicken2.png',
+    'img/Egg1.png',     //0
+    'img/Egg2.png',     //1
+    'img/Chicken1.png', //2
+    'img/Chicken2.png', //3
+    'img/Chicken3.png', //4
+    'img/Chicken4.png', //5
+    'img/Chicken5.png', //6
+    'img/Chicken6.png', //7
 ];
 
 function drawImg() {
     document.getElementById('myImage').src = imageArray[selectedImage];
 }
 
+function crack() {
+    if (selectedImage >= 1) return;
+    if (selectedImage === 0) selectedImage = 1;
+    else selectedImage = 0;
+    setTimeout(function () { selectedImage = 0; drawImg(); }, 200);
+    drawImg();
+};
+
 function blink() {
     if (selectedImage <= 1) return;
+    if (selectedImage >= 3) return;
     if (selectedImage === 2) selectedImage = 3;
     else selectedImage = 2;
     setTimeout(function () { selectedImage = 2; drawImg(); }, 200);
+    drawImg();
+};
+
+function blink2() {
+    if (selectedImage <= 3) return;
+    if (selectedImage >= 5) return;
+    if (selectedImage === 4) selectedImage = 5;
+    else selectedImage = 4;
+    setTimeout(function () { selectedImage = 4; drawImg(); }, 200);
+    drawImg();
+};
+
+function blink3() {
+    if (selectedImage <= 5) return;
+    if (selectedImage >= 7) return;
+    if (selectedImage === 6) selectedImage = 7;
+    else selectedImage = 6;
+    setTimeout(function () { selectedImage = 6; drawImg(); }, 200);
     drawImg();
 };
 
@@ -255,8 +286,7 @@ function buyEvolve() {
         points -= 10000000;
         evolveCount += 100000;
         showPoints();
-        if (selectedImage === 2) selectedImage += 2;
-        else selectedImage++;
+        selectedImage += 2;
         drawImg();
     }
 }

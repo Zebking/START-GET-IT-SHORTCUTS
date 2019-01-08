@@ -9,7 +9,7 @@ function chickenClicker() {
 <h1 class="backheadtext">Chicken Clicker</h1>
 
         <img id="myImage" width="300" height="385"
-        onclick="addPoint(), blink()" value="add Point"></img>
+        onclick="addPoint(), blink(), blink2(), crack(), blink3()" value="add Point"></img>
 
         <input type="text" id="points" value="0" disabled="disabled"/>
         <button id="clickUp1" onclick="buyClickUp1()">Upgrade click</button>
@@ -22,7 +22,7 @@ function chickenClicker() {
         <button id="upgrade5" onclick="buyUpgrade5()">Upgrade 5</button>
         <button id="upgrade6" onclick="buyUpgrade6()">Upgrade 6</button>
         <button id="evolve1" onclick="buyEvolve()">Evolve</button>
-        <button id="test" onclick="test()">Test</button>
+        
 
         <div id="startGame" onclick="this.style.visibility='hidden'; startGame()">Start game!</div>
 
