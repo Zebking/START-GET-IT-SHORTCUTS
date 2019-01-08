@@ -8,8 +8,8 @@ function chickenClicker() {
 
 <h1 class="backheadtext">Chicken Clicker</h1>
 
-        <img id="myImage" width="300" height="385"
-        onclick="addPoint(), blink(), blink2(), crack(), blink3()" value="add Point"></img>
+        <img id="myImage" width="400" height="500"
+        onclick="addPoint()" onmousedown="blink(), blink2(), crack(), blink3()" value="add Point"></img>
 
         <input type="text" id="points" value="0" disabled="disabled"/>
         <button id="clickUp1" onclick="buyClickUp1()">Upgrade click</button>
