@@ -163,6 +163,8 @@ var imageArray = [
     'img/Chicken4.png', //5
     'img/Chicken5.png', //6
     'img/Chicken6.png', //7
+    'img/Chicken7.png', //8
+    'img/Chicken8.png', //9
 ];
 
 function drawImg() {
@@ -201,6 +203,15 @@ function blink3() {
     if (selectedImage === 6) selectedImage = 7;
     else selectedImage = 6;
     setTimeout(function () { selectedImage = 6; drawImg(); }, 200);
+    drawImg();
+};
+
+function angry1() {
+    if (selectedImage <= 7) return;
+    if (selectedImage >= 9) return;
+    if (selectedImage === 8) selectedImage = 9;
+    else selectedImage = 8;
+    setTimeout(function () { selectedImage = 8; drawImg(); }, 200);
     drawImg();
 };
 
