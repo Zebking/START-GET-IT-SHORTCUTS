@@ -22,7 +22,7 @@ function chickenClicker() {
         <button id="upgrade5" onclick="buyUpgrade5()">Upgrade 5</button>
         <button id="upgrade6" onclick="buyUpgrade6()">Upgrade 6</button>
         <button id="evolve1" onclick="buyEvolve()">Evolve</button>
-        <button id="test" onclick="test()">Test give shitload of eggs</button>
+        <button id="test" onclick="test()">"TEST" - Give shitload of eggs!</button>
 
         <div id="startGame" onclick="this.style.visibility='hidden'; startGame()">Start game!</div>
 
