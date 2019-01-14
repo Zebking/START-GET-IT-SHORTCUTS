@@ -141,13 +141,7 @@ function info() {
 var selectedImage = 0;
 var points = 0;
 var pointsPerClick = 1;
-var farmerCount = 0;
-var tractorCount = 0;
-var combineCount = 0;
-var chickenCoopCount = 0;
-var barnCount = 0;
-var steroidCount = 0;
-var evolveCount = 0;
+var UpgradeCount = 0;
 var chickenEvolution = 0;
 
 
@@ -162,13 +156,14 @@ var imageArray = [
     'img/Chicken6.png', //7
     'img/Chicken7.png', //8
     'img/Chicken8.png', //9
+    'img/gameOver.png', //10
 ];
 
 function drawImg() {
     document.getElementById('myImage').src = imageArray[selectedImage];
 }
 
-function crack() {
+function eggCrack() {
     if (selectedImage >= 1) return;
     if (selectedImage === 0) selectedImage = 1;
     else selectedImage = 0;
@@ -216,6 +211,15 @@ function addPoint() {
     points += pointsPerClick;
     showPoints();
 }
+function gameOver() {
+    if (selectedImage === 10) {
+        points = 0;
+        pointsPerClick = 0;
+        UpgradeCount = 0;
+
+    }
+
+}
 
 function showPoints() {
     document.getElementById('points').value = points + "egg's";
@@ -249,7 +253,7 @@ function buyClickUp3() {
 function buyUpgrade1() {
     if (points >= 100) {
         points -= 100;
-        farmerCount++;
+        UpgradeCount++;
         showPoints();
     }
 }
@@ -257,42 +261,42 @@ function buyUpgrade1() {
 function buyUpgrade2() {
     if (points >= 500) {
         points -= 500;
-        tractorCount += 5;
+        UpgradeCount += 5;
         showPoints();
     }
 }
 function buyUpgrade3() {
     if (points >= 1000) {
         points -= 1000;
-        combineCount += 10;
+        UpgradeCount += 10;
         showPoints();
     }
 }
 function buyUpgrade4() {
     if (points >= 10000) {
         points -= 10000;
-        chickenCoopCount += 100;
+        UpgradeCount += 100;
         showPoints();
     }
 }
 function buyUpgrade5() {
     if (points >= 100000) {
         points -= 100000;
-        barnCount += 1000;
+        UpgradeCount += 1000;
         showPoints();
     }
 }
 function buyUpgrade6() {
     if (points >= 1000000) {
         points -= 1000000;
-        steroidCount += 10000;
+        UpgradeCount += 10000;
         showPoints();
     }
 }
 function buyEvolve() {
     if (points >= 10000000) {
         points -= 10000000;
-        evolveCount += 100000;
+        UpgradeCount += 100000;
         showPoints();
         selectedImage += 2;
         drawImg();
@@ -303,13 +307,7 @@ function test() {
     showPoints();
 }
 function addPointsFromAuto() {
-    points += farmerCount;
-    points += tractorCount;
-    points += combineCount;
-    points += chickenCoopCount;
-    points += barnCount;
-    points += steroidCount;
-    points += evolveCount;
+    points += UpgradeCount;
     showPoints();
 }
 
@@ -319,4 +317,3 @@ function startGame() {
     setInterval(addPointsFromAuto, 1000);
 
 }
-   
