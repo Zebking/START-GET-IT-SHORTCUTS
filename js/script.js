@@ -90,60 +90,13 @@ function restart() {
     location.reload();
 }
 
-// Pizza Order
-
-function pizzapopup() {
-    var popup = document.getElementByClass("myPopup");
-    popup.classList.toggle("show");
-}
-
-function info() {
-    var btnBestill = document.getElementById('bestill');
-    var infoDiv = document.getElementById('info1');
-    var aPi = document.getElementById('piA');
-    var iPi = document.getElementById('piI');
-    var bunnTykk = document.getElementById('tykkBunn');
-    var bunnTynn = document.getElementById('tynnBunn');
-    var fyllTaco = document.getElementById('fyllTaco');
-    var fyllKylling = document.getElementById('fyllKylling');
-    var fyllPepperoni = document.getElementById('fyllPepperoni');
-    var fyllSkinke = document.getElementById('fyllSkinke');
-    var strStor = document.getElementById('stor');
-    var strMiddels = document.getElementById('middels');
-    var strLiten = document.getElementById('liten');
-    if ((bunnTykk.checked || bunnTynn.checked) &&
-        (fyllTaco.checked || fyllKylling.checked || fyllPepperoni.checked || fyllSkinke.checked) &&
-        (strStor.checked || strMiddels.checked || strLiten.checked) &&
-        (aPi.checked || iPi.checked)) {
-        infoDiv.innerHTML = 'You have filled out the reqired info <br/> Ready to order!';
-        btnBestill.disabled = false;
-    }
-    else {
-        infoDiv.innerHTML = 'You have not chosen:';
-        if (!aPi.checked && !iPi.checked) {
-            infoDiv.innerHTML += '<li>Pizzatype</li>';
-        }
-        if (!bunnTykk.checked && !bunnTynn.checked) {
-            infoDiv.innerHTML += '<li>Dough</li>';
-        }
-        if (!fyllTaco.checked && !fyllKylling.checked && !fyllPepperoni.checked && !fyllSkinke.checked) {
-            infoDiv.innerHTML += '<li>Topping</li>';
-        }
-        if (!strStor.checked && !strMiddels.checked && !strLiten.checked) {
-            infoDiv.innerHTML += '<li>Size</li>';
-        }
-    }
-}
-
 // ChickenClicker
-
 
 var selectedImage = 0;
 var points = 0;
 var pointsPerClick = 1;
 var UpgradeCount = 0;
 var chickenEvolution = 0;
-
 
 var imageArray = [
     'img/Egg1.png',     //0
@@ -225,74 +178,34 @@ function showPoints() {
     document.getElementById('points').value = points + "egg's";
 }
 
-function buyClickUp1() {
-    if (points >= 10) {
-        points -= 10;
-        pointsPerClick++;
+function newClickUpgrade(price, upgradeAmount) {
+    if (points >= price) {
+        points -= price;
+        pointsPerClick += upgradeAmount;
         showPoints();
     }
 }
 
-function buyClickUp2() {
-    if (points >= 100) {
-        points -= 100;
-        pointsPerClick += 10;
+function newUpgrade(price, upgradeAmount) {
+    if (points >= price) {
+        points -= price;
+        UpgradeCount += upgradeAmount; 
         showPoints();
     }
 }
 
-
-function buyClickUp3() {
-    if (points >= 1000) {
-        points -= 1000;
-        pointsPerClick += 100;
-        showPoints();
-    }
+function buyUpgrade(level) {
+    if (level === 1) newUpgrade(100, 1);
+    else if (level === 2) newUpgrade(500, 5);
+    else if (level === 3) newUpgrade(1000, 10);
+    else if (level === 4) newUpgrade(10000, 100);
+    else if (level === 5) newUpgrade(100000, 1000);
+    else if (level === 6) newUpgrade(1000000, 10000);
+    else if (level === 7) newClickUpgrade(10, 1);
+    else if (level === 8) newClickUpgrade(100, 10);
+    else if (level === 9) newClickUpgrade(1000, 100);
 }
 
-function buyUpgrade1() {
-    if (points >= 100) {
-        points -= 100;
-        UpgradeCount++;
-        showPoints();
-    }
-}
-
-function buyUpgrade2() {
-    if (points >= 500) {
-        points -= 500;
-        UpgradeCount += 5;
-        showPoints();
-    }
-}
-function buyUpgrade3() {
-    if (points >= 1000) {
-        points -= 1000;
-        UpgradeCount += 10;
-        showPoints();
-    }
-}
-function buyUpgrade4() {
-    if (points >= 10000) {
-        points -= 10000;
-        UpgradeCount += 100;
-        showPoints();
-    }
-}
-function buyUpgrade5() {
-    if (points >= 100000) {
-        points -= 100000;
-        UpgradeCount += 1000;
-        showPoints();
-    }
-}
-function buyUpgrade6() {
-    if (points >= 1000000) {
-        points -= 1000000;
-        UpgradeCount += 10000;
-        showPoints();
-    }
-}
 function buyEvolve() {
     if (points >= 10000000) {
         points -= 10000000;
@@ -316,4 +229,43 @@ function startGame() {
     drawImg();
     setInterval(addPointsFromAuto, 1000);
 
+}
+
+//Is it open?
+
+function isItOpen() {
+    var dat = document.getElementById('dayAndTime');
+    var d = new Date();
+    var hour = d.getHours();
+    var dayNo = d.getDay();
+
+if (dayNo === 1)  day = 'Mandag';
+    else if (dayNo === 2) day = 'Tirsdag';
+    else if (dayNo === 3) day = 'onsdag';
+    else if (dayNo === 4) day = 'Torsdag';
+    else if (dayNo === 5) day = 'Fredag';
+    else if (dayNo === 6) day = 'Lørdag';
+    else if (dayNo === 7) day = 'Søndag';
+
+if (dayNo < 5) {
+    if (hour >= 10 && hour <= 16)
+        dat.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
+    else
+        dat.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
+}
+else if (dayNo === 5) {
+    if (hour >= 10 && hour <= 17)
+        dat.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
+    else
+        dat.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
+}
+else if (dayNo === 6) {
+    if (hour >= 10 && hour <= 14)
+        dat.innerHTML += '<p class=open>Open!<br>PARTY TIME!</p>';
+    else
+        dat.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
+} else if (dayNo === 7) {
+        dat.innerHTML += '<p class=stengt>Closed!<br>No party party..T_T</p>';
+
+    }
 }

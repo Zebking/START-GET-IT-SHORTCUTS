@@ -12,15 +12,15 @@ function chickenClicker() {
         onclick="addPoint()" onmousedown="blink(), blink2(), eggCrack(), blink3(), angry1()" value="add Point"></img>
 
         <input type="text" id="points" value="0" disabled="disabled"/>
-        <button id="clickUp1" onclick="buyClickUp1()">Upgrade click</button>
-        <button id="clickUp2" onclick="buyClickUp2()">Upgrade click 2</button>
-        <button id="clickUp3" onclick="buyClickUp3()">Upgrade click 3</button>
-        <button id="upgrade1" onclick="buyUpgrade1()">Upgrade 1</button>
-        <button id="upgrade2" onclick="buyUpgrade2()">Upgrade 2</button>
-        <button id="upgrade3" onclick="buyUpgrade3()">Upgrade 3</button>
-        <button id="upgrade4" onclick="buyUpgrade4()">Upgrade 4</button>
-        <button id="upgrade5" onclick="buyUpgrade5()">Upgrade 5</button>
-        <button id="upgrade6" onclick="buyUpgrade6()">Upgrade 6</button>
+        <button id="clickUp1" onclick="buyUpgrade(7)">Upgrade click</button>
+        <button id="clickUp2" onclick="buyUpgrade(8)">Upgrade click 2</button>
+        <button id="clickUp3" onclick="buyUpgrade(9)">Upgrade click 3</button>
+        <button id="upgrade1" onclick="buyUpgrade(1)">Upgrade 1</button>
+        <button id="upgrade2" onclick="buyUpgrade(2)">Upgrade 2</button>
+        <button id="upgrade3" onclick="buyUpgrade(3)">Upgrade 3</button>
+        <button id="upgrade4" onclick="buyUpgrade(4)">Upgrade 4</button>
+        <button id="upgrade5" onclick="buyUpgrade(5)">Upgrade 5</button>
+        <button id="upgrade6" onclick="buyUpgrade(6)">Upgrade 6</button>
         <button id="evolve1" onclick="buyEvolve(), gameOver()">Evolve</button>
         <button id="test" onclick="test()">"TEST" - Give shitload of eggs!</button>
 
